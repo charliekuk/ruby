@@ -1,6 +1,6 @@
 #frozen_string_literal:ture
 
-class QuickUF
+class QuickFindUF
   # set constructor
   def initialize(n)
     @count = n# number of components
@@ -63,7 +63,7 @@ class QuickUF
 end
 
 # test
-uf = QuickUF.new(10)
+uf = QuickFindUF.new(10)
 uf.union(1,2)
 #puts uf.connected 1, 2
 uf.union(2,8)
